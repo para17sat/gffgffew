@@ -1,1150 +1,419 @@
 * {
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
-
-body {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    color: #1c1c1c;
+    background: #ffffff;
+    line-height: 1.6;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background: #f6f9fc;
+  }
+  
+  .left {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .home {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 30px;
+  }
+  
+  .home p {
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .boost h1 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .boost h1 span {
+    display: block;
+    color: #3bb26c;
+  }
+  
+  .boost p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .boost button {
+    padding: 14px 28px;
+    background: #3bb26c;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .boost button:hover {
+    background: #329f5d;
+  }
+  
+  .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  
+  .level-up {
+    text-align: center;
+    padding: 100px 10%;
+  }
+  
+  .level-up h3 {
+    font-size: 32px;
+    font-weight: 700;
+  }
+  
+  .level-up p {
+    margin: 20px auto;
+    font-size: 18px;
+    max-width: 700px;
+  }
+  
+  .teams {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 60px;
+  }
+  
+  .coders h1 {
+    font-size: 40px;
+    color: #3bb26c;
+  }
+  
+  .coders p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
 
-.hd {
-    width: 80vw;
+  .green {
+    color: #3bb26c;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+  }
 
-    header {
-        padding: 20px 40px;
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        width: 85vw;
-        gap: 0;
-    }
-
-    .head {
-        display: flex;
-        flex-direction: row;
-        gap: 0px;
-        align-items: center;
-    }
-
-    .head img {
-        width: 15vw;
-    }
-
-    .head ul {
-        display: flex;
-        list-style: none;
-        gap: 20px;
-        font-size: 20px;
-        color: grey;
-    }
-
-    .amin {
-        display: flex;
-        justify-content: space-between;
-        align-items: start;
-        padding: 50px;
-        gap: 0px;
-    }
-
-    .left {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-    }
-
-    .left .box {
-        max-width: 600px;
-    }
-
-    .box h1 {
-        font-size: 60px;
-        margin-bottom: 20px;
-    }
-
-    .box h1 span {
-        color: green;
-    }
-
-    .box h4 {
-        font-size: 20px;
-        color: gray;
-        margin-bottom: 20px;
-    }
-
-    .box button {
-        border: none;
-        border-radius: 10px;
-        background-color: green;
-        color: white;
-        padding: 10px;
-        font-size: 18px;
-        width: 200px;
-    }
-
-    .image {
-        flex: 1;
-        overflow: hidden;
-        clip-path: polygon(15% 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    .image img {
-        width: 50vw;
-        height: auto;
-        display: block;
-    }
-}
-
-.main1 {
+  .accel-1 img{
+    width: 550px;
+  }
+ 
+  .learn, .using, .growing, .soft, .coding {
+    padding: 100px 10%;
+    background: #f6f9fc;
+  }
+  
+  .learn:nth-child(even),
+  .using:nth-child(even),
+  .growing:nth-child(even),
+  .soft:nth-child(even),
+  .coding:nth-child(even) {
+    background: #ffffff;
+  }
+  
+  .learn h2,
+  .using h2,
+  .growing h2,
+  .soft h2,
+  .coding h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    max-width: 700px;
+  }
+  
+  .learn > p,
+  .using > p,
+  .growing > p,
+  .soft > p,
+  .coding > p {
+    font-size: 18px;
+    max-width: 700px;
+  }
+  
+ 
+  .collaborate,
+  .collaborate-2,
+  .collaborate-3,
+  .collaborate-4 {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .collaborate > .one,
+  .collaborate-2 > .second,
+  .collaborate-3 > .new-1,
+  .collaborate-4 > .how-2 {
+    flex: 1;
+  }
+  
+  .collaborate > .two,
+  .collaborate-2 > .first,
+  .collaborate-3 > .new-2,
+  .collaborate-4 > .how-1 {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-
-    .one {
-        background-color: antiquewhite;
-        width: 85vw;
-        padding: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        .top {
-            h1 {
-                font-size: 60px;
-            }
-
-            h3 {
-                font-size: 25px;
-                text-align: center;
-                width: 60vw;
-            }
-        }
-
-
-        .card {
-            display: flex;
-            flex-direction: row;
-            gap: 0;
-            width: 50vw;
-            align-items: center;
-            justify-content: center;
-
-            .first {
-                text-align: center;
-                display: flex;
-                flex-direction: column;
-                background-color: white;
-                width: 20vw;
-                border-color: gray;
-
-                h1 {
-                    font-size: 55px;
-                    color: green;
-                }
-
-                h3 {
-                    color: gray;
-                }
-            }
-        }
-    }
-
-    .two {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 85vw;
-
-        .top {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-
-            h2 {
-                color: green;
-            }
-
-            h1 {
-                font-size: 50px;
-            }
-
-            h3 {
-                width: 60vw;
-                font-size: 25px;
-                color: gray;
-            }
-        }
-
-        .card {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            align-items: center;
-            justify-content: center;
-            width: 60vw;
-
-            big {
-                width: 60vw;
-            }
-
-            .right {
-                width: 40vw;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-
-                .txt {
-                    display: flex;
-                    gap: 20px;
-                }
-            }
-        }
-    }
-
-    .tree {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: antiquewhite;
-        width: 85vw;
-        padding-bottom: 50px;
-
-        .top {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-
-            h2 {
-                color: green;
-            }
-
-            h1 {
-                font-size: 50px;
-            }
-
-            h3 {
-                width: 60vw;
-                font-size: 25px;
-                color: gray;
-            }
-        }
-
-        .card {
-            width: 60vw;
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
-
-            big {
-                width: 60vw;
-            }
-
-            .left {
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-
-                .txt {
-                    display: flex;
-                    gap: 20px;
-                }
-            }
-        }
-    }
-
-    .four {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 85vw;
-        padding-bottom: 50px;
-
-        .top {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-
-            h2 {
-                color: green;
-            }
-
-            h1 {
-                font-size: 50px;
-            }
-
-            h3 {
-                width: 60vw;
-                font-size: 25px;
-                color: gray;
-            }
-        }
-
-        .card {
-            width: 60vw;
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
-
-            big {
-                width: 60vw;
-            }
-
-            .left {
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-
-                .txt {
-                    display: flex;
-                    gap: 20px;
-                }
-            }
-        }
-    }
-
-    .five {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        background-color: antiquewhite;
-        width: 85vw;
-        padding-bottom: 50px;
-
-        .top {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-
-            h2 {
-                color: green;
-            }
-
-            h1 {
-                font-size: 50px;
-            }
-
-            h3 {
-                width: 60vw;
-                font-size: 25px;
-                color: gray;
-            }
-        }
-
-        .card {
-            width: 60vw;
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
-
-            big {
-                width: 60vw;
-            }
-
-            .left {
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-
-                .txt {
-                    display: flex;
-                    gap: 20px;
-                }
-            }
-        }
-    }
-
-    .six {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 85vw;
-        padding-bottom: 50px;
-
-        .top {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-
-            h2 {
-                color: green;
-            }
-
-            h1 {
-                font-size: 50px;
-            }
-
-            h3 {
-                width: 60vw;
-                font-size: 25px;
-                color: gray;
-            }
-        }
-
-        .card {
-            width: 60vw;
-            display: flex;
-            flex-direction: row;
-            gap: 30px;
-            align-items: center;
-            justify-content: center;
-
-            big {
-                width: 60vw;
-            }
-
-            .left {
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-
-                .txt {
-                    display: flex;
-                    gap: 20px;
-                }
-            }
-        }
-    }
-
-    .seven {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 85vw;
-        padding-bottom: 50px;
-        background-color: antiquewhite;
-
-        .top {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-
-            h2 {
-                color: green;
-            }
-
-            h1 {
-                font-size: 50px;
-            }
-
-            h3 {
-                width: 60vw;
-                font-size: 25px;
-                color: gray;
-            }
-        }
-
-        .last {
-            display: flex;
-            flex-direction: row;
-            gap: 20px;
-            align-items: center;
-            justify-content: center;
-
-            .row {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                .txt {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    gap: 20px;
-
-                    .hr {
-                        width: 5px;
-                        height: 108px;
-                        background-color: green;
-                    }
-
-                    img {
-                        width: 5vw;
-                    }
-                }
-            }
-        }
-
-    }
-
-
-}
-
-.ex {
+    gap: 20px;
+  }
+  
+  .collaborate-4 img,
+  .collaborate-2 img,
+  .collaborate-3 img {
+    border-radius: 10px;
+  }
+  
+  .two p,
+  .first p,
+  .new-2 p,
+  .how-1 p,
+  .accel-2 p {
     display: flex;
-    flex-direction: row;
-    width: 85vw;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(179, 255, 228, 0.679);
-    margin-left: 7vw;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 16px;
+  }
+  
 
-    .con {
-        width: 60vw;
-        display: flex;
-        flex-direction: row;
-        gap: 20vw;
-        align-items: center;
-
-        h1 {
-            font-size: 60px;
-
-            .one {
-                color: rgb(0, 71, 0);
-            }
-
-            .two {
-                color: rgb(50, 197, 17);
-            }
-        }
-
-        button {
-            width: 10vw;
-            height: 10vh;
-            border-radius: 10px;
-            background-color: green;
-            color: white;
-            border: none;
-        }
-    }
-}
-
-footer {
+  .working {
+    background: #ffffff;
+    padding: 100px 10%;
+    text-align: center;
+  }
+  
+  .working h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 10px;
+  }
+  
+  .working > p {
+    font-size: 18px;
+    margin-top: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .process {
     display: flex;
-    width: 97vw;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  
+  .image-1 {
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .top {
-        display: flex;
-        flex-direction: row;
-        gap: 30px;
-    }
-}
-
-@media screen and (max-width:431px) {
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: start;
-    }
-
-    .hd {
-        width: 80vw;
-        margin-top: -50px;
-
-        header {
-            display: flex;
-            justify-content: center;
-            align-items: start;
-            width: 80vw;
-            gap: 0;
-        }
-
-        .head {
-            display: flex;
-            flex-direction: row;
-            gap: 30vw;
-            align-items: center;
-        }
-
-        .head img {
-            width: 30vw;
-        }
-
-        .head ul {
-            content: url(./img/png-transparent-hamburger-button-computer-icons-menu-menu-food-text-rectangle-thumbnail.png);
-            width: 20vw;
-        }
-
-        .amin {
-            display: flex;
-            justify-content: center;
-            align-items: start;
-            flex-direction: column;
-            padding: 50px;
-            gap: 30px;
-        }
-
-        .left {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            width: 80vw;
-        }
-
-        .left .box {
-            max-width: 80vw;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .box h1 {
-            font-size: 35px;
-            margin-bottom: 20px;
-        }
-
-        .box h1 span {
-            color: green;
-        }
-
-        .box h4 {
-            font-size: 15px;
-            color: gray;
-        }
-
-        .box button {
-            border: none;
-            border-radius: 10px;
-            background-color: green;
-            color: white;
-            padding: 10px;
-            font-size: 18px;
-            width: 80vw;
-            height: 80px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .image {
-            flex: 1;
-            overflow: hidden;
-            clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%);
-        }
-
-        .image img {
-            width: 80vw;
-            height: auto;
-            display: block;
-        }
-    }
-
-    .main1 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 30px;
-
-        .one {
-            background-color: antiquewhite;
-            width: 80vw;
-            padding: 10px 5px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-
-            .top {
-                h1 {
-                    font-size: 30px;
-                    width: 75vw;
-                }
-
-                h3 {
-                    font-size: 15px;
-                    text-align: center;
-                    width: 70vw;
-                    color: gray;
-                }
-            }
-
-
-            .card {
-                display: flex;
-                flex-direction: column;
-                gap: 0;
-                width: 50vw;
-                align-items: center;
-                justify-content: center;
-
-                .first {
-                    text-align: center;
-                    background-color: white;
-                    width: 75vw;
-                    border-color: gray;
-
-                    h1 {
-                        font-size: 55px;
-                        color: green;
-                    }
-
-                    h3 {
-                        color: gray;
-                        margin-top: -30px;
-                    }
-                }
-            }
-        }
-
-        .two {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 85vw;
-
-            .top {
-                display: flex;
-                flex-direction: column;
-                text-align: start;
-                align-items: start;
-                justify-content: start;
-
-                h2 {
-                    color: green;
-                }
-
-                h1 {
-                    font-size: 30px;
-                    margin-top: -20px;
-                }
-
-                h3 {
-                    width: 70vw;
-                    font-size: 15px;
-                    color: gray;
-                    margin-top: -20px;
-                }
-            }
-
-            .card {
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                align-items: center;
-                justify-content: center;
-                width: 80vw;
-
-                .big {
-                    width: 340px;
-                }
-
-                .right {
-                    width: 80vw;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: start;
-                    gap: 20px;
-
-                    .txt {
-                        display: flex;
-                        gap: 10px;
-                        width: 60vw;
-
-                        h2 {
-                            width: 60vw;
-                            font-size: 14px;
-                        }
-                    }
-                }
-            }
-        }
-
-        .tree {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: antiquewhite;
-            width: 85vw;
-            padding-bottom: 50px;
-
-            .top {
-                display: flex;
-                flex-direction: column;
-                text-align: start;
-                align-items: start;
-                justify-content: start;
-                padding: 10px 5px;
-
-                h2 {
-                    color: green;
-                }
-
-                h1 {
-                    font-size: 30px;
-                }
-
-                h3 {
-                    width: 70vw;
-                    font-size: 15px;
-                    color: gray;
-                }
-            }
-
-            .card {
-                width: 60vw;
-                display: flex;
-                flex-direction: column-reverse;
-                gap: 30px;
-                align-items: center;
-                justify-content: center;
-
-                .big {
-                    width: 320px;
-                }
-
-                .left {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-                    width: 70vw;
-
-                    .txt {
-                        display: flex;
-                        gap: 10px;
-                        font-size: 10px;
-                    }
-                }
-            }
-        }
-
-        .four {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 85vw;
-            padding-bottom: 50px;
-
-            .top {
-                display: flex;
-                flex-direction: column;
-                text-align: start;
-                align-items: start;
-                justify-content: start;
-
-                h2 {
-                    color: green;
-                }
-
-                h1 {
-                    font-size: 30px;
-                    margin-top: -20px;
-                }
-
-                h3 {
-                    width: 60vw;
-                    font-size: 15px;
-                    color: gray;
-                    margin-top: -20px;
-                }
-            }
-
-            .card {
-                width: 65vw;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-                align-items: center;
-                justify-content: center;
-
-                .big {
-                    width: 80vw;
-                }
-
-                .left {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: start;
-                    gap: 20px;
-                    width: 70vw;
-
-                    .txt {
-                        display: flex;
-                        gap: 10px;
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-
-        .five {
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            justify-content: start;
-            background-color: antiquewhite;
-            width: 85vw;
-            padding-bottom: 50px;
-
-            .top {
-                display: flex;
-                flex-direction: column;
-                text-align: start;
-                align-items: start;
-                justify-content: start;
-                padding: 10px 5px;
-
-                h2 {
-                    color: green;
-                }
-
-                h1 {
-                    font-size: 30px;
-                    margin-top: -20px;
-                }
-
-                h3 {
-                    width: 60vw;
-                    font-size: 15px;
-                    color: gray;
-                    margin-top: -20px;
-                }
-            }
-
-            .card {
-                width: 80vw;
-                display: flex;
-                flex-direction: column-reverse;
-                gap: 30px;
-                align-items: center;
-                justify-content: center;
-                padding-left: 15px;
-
-                .big {
-                    width: 80vw;
-                }
-
-                .left {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-
-                    .txt {
-                        display: flex;
-                        gap: 10px;
-                        font-size: 14px;
-                    }
-                }
-            }
-        }
-
-        .six {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 85vw;
-            padding-bottom: 50px;
-
-            .top {
-                display: flex;
-                flex-direction: column;
-                text-align: start;
-                align-items: start;
-                justify-content: start;
-
-                h2 {
-                    color: green;
-                }
-
-                h1 {
-                    font-size: 30px;
-                    margin-top: -20px
-                }
-
-                h3 {
-                    width: 60vw;
-                    font-size: 15px;
-                    margin-top: 20px;
-                    color: gray;
-                }
-            }
-
-            .card {
-                width: 60vw;
-                display: flex;
-                flex-direction: column;
-                gap: 30px;
-                align-items: center;
-                justify-content: center;
-                .big {
-                    width: 80vw;
-                }
-
-                .left {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 20px;
-
-                    .txt {
-                        display: flex;
-                        gap: 10px;
-                        font-size: 14px;
-                        width: 80vw;
-                    }
-                }
-            }
-        }
-
-        .seven {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 85vw;
-            padding-bottom: 50px;
-            background-color: antiquewhite;
-
-            .top {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-
-                h2 {
-                    color: green;
-                }
-
-                h1 {
-                    font-size: 50px;
-                }
-
-                h3 {
-                    width: 60vw;
-                    font-size: 25px;
-                    color: gray;
-                }
-            }
-
-            .last {
-                display: flex;
-                flex-direction: row;
-                gap: 20px;
-                align-items: center;
-                justify-content: center;
-
-                .row {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: 20px;
-
-                    .txt {
-                        display: flex;
-                        flex-direction: column;
-                        align-items: start;
-                        gap: 0px;
-                        padding-left: 10px;
-
-                        .hr {
-                            width: 80vw;
-                            height: 5px;
-                            background-color: green;
-                        }
-
-                        img {
-                            width: 15vw;
-                        }
-                    }
-                }
-            }
-
-        }
-
-
-
-    }
-
-    .ex {
-        display: flex;
-        flex-direction: row;
-        width: 85vw;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(179, 255, 228, 0.679);
-        margin-left: 0;
-        padding-top: 30px;
-        padding-bottom: 30px;
-
-        .con {
-            width: 70vw;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
-
-            h1 {
-                font-size: 30px;
-
-                .one {
-                    color: rgb(0, 71, 0);
-                }
-
-                .two {
-                    color: rgb(50, 197, 17);
-                }
-            }
-
-            button {
-                width: 80vw;
-                height: 10vh;
-                border-radius: 10px;
-                background-color: green;
-                color: white;
-                border: none;
-            }
-        }
-    }
-}
-
-footer {
-    color: gray;
+    position: relative;
+    left: 200px;
+    gap: 40px;
+  }
+  
+  .image-1 img {
+    width: 60px;
+  }
+  
+  .image-2 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    text-align: left;
+    gap: 40px;
+    margin-top: 50px;
+  }
+  
+  .image-2 h3 {
+    color: #3bb26c;
+    margin-bottom: 10px;
+  }
+  
+  .image-2 p {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  
+  .ready {
     display: flex;
-    width: 97vw;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
+    position:relative;
+    left: 220px;
+    background: #3bb26c;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    width: 70%;
+  }
 
-    .top {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        font-size: 15px;
+  .ready h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .ready button {
+    background: white;
+    color: #3bb26c;
+    padding: 14px 28px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    margin-top: 30px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .ready button:hover {
+    background: #e6f6ee;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: center;
+    background: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      padding: 40px 5%;
+      text-align: center;
     }
-
-    h2 {
-        font-size: 15px;
+  
+    .boost h1 {
+      font-size: 28px;
     }
-}
+  
+    .boost p {
+      font-size: 16px;
+    }
+  
+    .boost button {
+      width: 100%;
+    }
+  
+    .right {
+      margin-top: 30px;
+    }
+  
+    .level-up {
+      padding: 60px 5%;
+    }
+  
+    .level-up h3 {
+      font-size: 24px;
+    }
+  
+    .teams {
+      flex-direction: column;
+      gap: 40px;
+    }
+  
+    .coders h1 {
+      font-size: 30px;
+    }
+  
+    .accel-1 img {
+      width: 100%;
+    }
+  
+    .learn, .using, .growing, .soft, .coding {
+      padding: 60px 5%;
+    }
+  
+    .collaborate,
+    .collaborate-2,
+    .collaborate-3,
+    .collaborate-4 {
+      flex-direction: column;
+    }
+  
+    .working {
+      padding: 60px 5%;
+    }
+  
+    .working h2 {
+      font-size: 24px;
+    }
+  
+    .process {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  
+    .image-1 {
+      left: 0;
+      align-items: center;
+    }
+  
+    .ready {
+      flex-direction: column;
+      left: 0;
+      width: 100%;
+      padding: 40px 5%;
+    }
+  
+    .ready h2 {
+      font-size: 28px;
+    }
+  
+    .ready button {
+      width: 100%;
+    }
+  
+    .footer {
+      flex-direction: column;
+      padding: 40px 5%;
+    }
+  }
+  .ready button {
+      width: 100%;
+    }
+  
+    .footer {
+      flex-direction: column;
+      padding: 40px 5%;
+    }
+  }
